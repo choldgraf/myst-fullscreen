@@ -15,8 +15,10 @@ You can also see this in the primary sidebar to the left (at the bottom), it's a
 ```{literalinclude} ./myst.yml
 ```
 
-:::{warning} Doesn't work in-line
-Note that this is a role, but what's emitted is a block-level output so the button is on a new line. That's because right now anywidget is a block-only interface. Here's an issue to track making it a role or in-line interface as well:
+:::{warning} Only sort-of works in-line
+Anywidget emits a block-level output so the button is on a new line. As a result, this repo uses a hack where a role emits a "span" with a special class. A transform finds the items with that class and uses an anywidget node at the end of the page to attach a mouse click event to it. That's not recommended practice because we're changing things outside of the widget's "shadow DOM", but hey, it works more or less...
+
+Here's an issue to track making it a role or in-line interface as well:
 
 https://github.com/jupyter-book/mystmd/issues/2779
 :::
