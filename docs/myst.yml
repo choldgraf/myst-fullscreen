@@ -1,0 +1,16 @@
+version: 1
+project:
+  id: myst-fullscreen
+  title: myst-fullscreen
+  plugins:
+    - ../src/index.mjs
+  parts:
+    primary_sidebar_footer: |
+      Click here! 👉 {fullscreen}`click`
+  toc:
+    - file: index.md
+
+site:
+  template: book-theme
+  options:
+    logo_text: myst-fullscreen
