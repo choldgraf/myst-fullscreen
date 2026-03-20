@@ -2,6 +2,7 @@ version: 1
 project:
   id: myst-fullscreen
   title: myst-fullscreen
+  github: https://github.com/choldgraf/myst-fullscreen
   plugins:
     - ../src/index.mjs
   parts:

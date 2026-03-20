@@ -24,6 +24,8 @@ jobs:
           node-version: 22
       - name: Build docs
         run: npx -y mystmd build --html
+        env:
+          BASE_URL: /myst-fullscreen/
         working-directory: docs
       - uses: actions/upload-pages-artifact@v3
         with:
